@@ -29,9 +29,6 @@
             </header>  
             <main class="content-main">
                 <div class="content-selection">
-                    <div class="background">
-                        <img src="img/background.png" width="" height="" alt="Welcome to the gorgeous Sedona">
-                    </div>
                     <div class="housing-options">
                         <form name="filters" action="#" method="get">
                             <div class="conveniences">
@@ -71,8 +68,8 @@
                             <div class="daily-price">
                                 <b class="filters-title">Стоимость в сутки(р):</b>
                                 <div class="price-range">
-                                    <span class="title-price-range">От 0</span>
-                                    <span class="title-price-range">До 3000</span>
+                                    <input type="text" name="pricemin" placeholder="От 0">
+                                    <input type="text" name="pricemax" placeholder="До 3000">
                                 </div>
                                 <div class="filter">
                                     <div class="filter-circle circle-left"></div>
@@ -88,24 +85,26 @@
                     <b class="result-number">Найдено: 3</b>
                     <div class="result-filters">
                         <b class="result-filters-name">Сортировка:</b>
-                        <form name="filters-sorting" action="#" method="get">
-                            <button class="sorting" name="sortByPrice" type="submit">по цене</button>
-                            <button class="sorting" name="sortByType" type="submit">по типу</button>
-                            <button class="sorting" name="sortByRating" type="submit">по рейтингу</button>
-                        </form>
-                    </div>
-                    <div class="pointers-arrows">
-                        <form name="arrows" action="#" method="get">
-                            <button class="btn-pointers" name="sortAsc" type="button"><img src="image/up.png" width="" height="" alt="от меньшего"></button>
-                            <button class="btn-pointers" name="sortDesc" type="button"><img src="image/down.png" width="" height="" alt="от большего"></button>
-                        </form>    
+                        <ul class="filters-sorting">
+                            <li>
+                                <a href="#">по цене</a>
+                            </li>
+                            <li>
+                                <a href="#">по типу</a>
+                            </li>
+                            <li>
+                                <a href="#">по рейтингу</a>
+                            </li>                                
+                        </ul>
+                         <a class="pointer-arrow before" href="#"><img src="image/up.png" width="" height="" alt="от меньшего"></a>
+                         <a class="pointer-arrow after" href="#"><img src="image/down.png" width="" height="" alt="от большего"></a>
                     </div>
                 </div>
                 <div class="housing-cards">
-                    <div class="housing-image">
-                        <img src="img/amararesort" width="" height="" alt="Amara Resort & Spa">
-                    </div>
                     <div class="housing-info">
+                        <div class="housing-image">
+                            <img src="img/amararesort" width="" height="" alt="Amara Resort & Spa">
+                        </div>
                         <b class="housing-name">Amara Resort &#38; Spa</b>
                         <div class="more-info">
                             <b class="main-housing-info">Гостиница</b>
@@ -121,6 +120,9 @@
                         </div>
                     </div> 
                     <div class="housing-info">
+                        <div class="housing-image">
+                            <img src="img/desertquailinn" width="" height="" alt="Desert Quail Inn">
+                        </div>
                         <b class="housing-name">Desert Quail Inn</b>
                         <div class="more-info">
                             <b class="main-housing-info">Мотель</b>
@@ -136,6 +138,9 @@
                         </div>
                     </div>
                     <div class="housing-info">
+                        <div class="housing-image">
+                            <img src="img/villasatpocodiablo" width="" height="" alt="Villas At Poco Diablo">
+                        </div>
                         <b class="housing-name">Villas At Poco Diablo</b>
                         <div class="more-info">
                             <b class="main-housing-info">Апартаменты</b>
