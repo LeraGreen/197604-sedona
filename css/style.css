@@ -8,9 +8,7 @@ body {
 
 .container {
     width: 1200px;
-    margin: 0 auto; 
-    
-    background-color: aquamarine;
+    margin: 0 auto;
 }
 
 
@@ -223,7 +221,7 @@ content-selection li {
     padding-bottom: 40px;
 }
 
-/*разобраться с отступом между блоками и найдено:3 */
+
 
 .result-number {
     float: left;
