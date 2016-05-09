@@ -106,7 +106,7 @@
                     <p>Укажите предполгаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
                 </section>
                 <div class="search">
-                    <a href="#" class="search-hotels">Поиск гостиницы в Седоне</a>
+                    <a class="search-hotels" href="#">Поиск гостиницы в Седоне</a>
                     <div class="search-filters">
                         <form name="calendar" action="#" method="get">
                             <div class="field-data clearfix">
@@ -115,7 +115,7 @@
                                     <button class="btn-calendar" type="button">
                                         <span class="icon-calendar"></span>
                                     </button>
-                                    <input type="data" name="calendar" id="arrival-data" placeholder="Введите дату заезда">
+                                    <input type="data" name="arrival-data" id="arrival-data" placeholder="Введите дату заезда" tabindex="1">
                                 </div>
                             </div>
                             <div class="field-data clearfix">
@@ -124,7 +124,7 @@
                                     <button class="btn-calendar" type="button">
                                         <span class="icon-calendar"></span>
                                     </button>
-                                    <input type="data" name="calendar" id="departure-data" placeholder="Введите дату выезда">
+                                    <input type="data" name="departure-data" id="departure-data" placeholder="Введите дату выезда" tabindex="2">
                                 </div>    
                             </div>
                             <div class="field-people cleaffix">
@@ -160,7 +160,6 @@
                     </div>    
                 </div>
                 <div class="map">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d37041.24439886226!2d-111.81619621263492!3d34.85586581828599!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1460890331853" width="100%" height="593px" frameborder="0" style="border:0" allowfullscreen></iframe>
                 </div>
             </main>    
             <footer class="main-footer main-index-footer">
@@ -177,6 +176,12 @@
                     <a class="copyright-logo" href="https://htmlacademy.ru" target="_blank">htmlacademy</a>
                 </section>    
             </footer>
-        </div>    
+        </div>
+        <script src="js/popup.js">
+        </script>
+        <script src="js/map.js">
+        </script>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBMM_0BSbvbuLI3piPwTT4-4bKCdubgBDQ&callback=initMap">
+        </script>
     </body>
 </html>

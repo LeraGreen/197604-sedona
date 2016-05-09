@@ -1,19 +1,20 @@
 body {
+    font-weight: normal;
     font-size: 14px;
     line-height: 21px;
-    background-color: #f2f2f2;
-    color: #333333;
-    font-weight: normal;
     font-family: "PT Sans", "Arial", serif;
     text-transform: uppercase;
+    
+    color: #333333;
+    background-color: #f2f2f2;
 }
 
 .container {
     width: 1200px;
     margin: 0 auto;
-    box-shadow: 0 5px 15px rgba(0,0,0,.2); 
+    
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); 
 }
-
 
 @font-face {
   font-weight: normal;
@@ -55,27 +56,26 @@ body {
 .icon-minus::before { content: "\e802"; } /* "" */
 .icon-youtube::before { content: "\f39e"; } /* "" */
 
-
-
 .main-menu {
-    margin: 0;
-    padding: 0;
-    list-style: none;
     width: 100%;
     height: 56px;
+    margin: 0;
+    padding: 0;
+    
     background-color: #ffffff;
+    list-style: none;
 }
 
 .main-menu li {
     display: block;
+    float: left;
     width: 240px;
     height: 56px;
-    text-align: center;
-    vertical-align: middle;
-    float: left;
     margin: 0;
     padding: 0;
     
+    text-align: center;
+    vertical-align: middle; 
 }
 
 .main-menu h1 {
@@ -83,12 +83,13 @@ body {
 }
 
 .main-menu a {
-    text-decoration: none;
-    line-height: 26px;
-    font-weight: bold;
-    color: #000000;
     padding-top: 20px;
+    
+    font-weight: bold;
+    text-decoration: none;
     line-height: 56px;
+    
+    color: #000000;
 }
 
 .main-menu a:hover {
@@ -111,43 +112,37 @@ body {
     color: #d6d0cc;
 }
 
-
-
 .content-main {
     background-color: #ffffff;
 }
 
-
 .main-image {
     height: 511px;
+    
     text-align: center;
+    
     background-image: url("../img/background-sedona-index.jpg");
     background-repeat: no-repeat;
     background-color: #acd5ee;
 }
 
-
 .logo {
     padding-top: 215px;
 }
 
-
-
-
-
-
 .intro {
-    padding-top: 57px;
-    padding-bottom: 37px;
     width: 570px;
     margin: 0 auto;
+    padding-top: 57px;
+    padding-bottom: 37px;
+    
     text-align: center;
     line-height: 26px;
-    
 }
 
 .intro-text {
     font-size: 21px;
+    
     color: #000000;
 }
 
@@ -155,22 +150,13 @@ body {
     margin-top: 22px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
 .index-content {
     height: 256px;
-    background-color: #81b3d2;
-    color: #ffffff;
+    
     text-align: center;
+    
+    color: #ffffff;
+    background-color: #81b3d2;
 }
 
 .index-content-text-left {
@@ -183,6 +169,7 @@ body {
     float: right;
     height: 256px;
     margin: 0;
+    
     background-color: #e7a79a;
 }
 
@@ -201,18 +188,11 @@ body {
     font-size: 21px;
 }
 
-
-
-
-
-
-
-
 .features-first {
     padding-top: 60px; 
-    text-align: center;
     padding-bottom: 81px;
     
+    text-align: center;
 }
 
 .features-item {
@@ -223,10 +203,12 @@ body {
 }
 
 .features-name {
-    font-size: 21px;
-    font-weight: bold;
-    color: #000000;
     margin-top: 24px;
+    
+    font-weight: bold;
+    font-size: 21px;
+    
+    color: #000000;
 }
 
 .features-item p {
@@ -238,20 +220,11 @@ body {
     margin-bottom: -4px;
 }
 
-
-
-
-
-
-
-
-
-
-
 .index-content-img-left {
     float: left;
     height: 256px;
     margin: 0;
+    
     background-color: #eac1ad;
 }
 
@@ -261,66 +234,99 @@ body {
     padding-top: 55px;
 }
 
-
-
-
-
-
 .features-second {
     padding-top: 23px;
-    text-align: center;
     padding-bottom: 57px;
+    
+    text-align: center;
+    
     background-color: #eeeeee;
 }
 
-.features-second p {
-   
-}
-
-
-
 .intro-search {
-    line-height: 24px;
     padding-bottom: 35px;
+    
+    line-height: 24px;
 }
 
 .intro-text-search {
     font-size: 30px;
-    color: #000000;
     line-height: 24px;
+    
+    color: #000000;
 }
 
+.map {
+    width: 100%;
+    height: 593px;
+}
 
 .search {
     width: 570px;
     margin: 0 auto;
+    
     text-align: center;
 }
 
 .search-hotels {
-    text-decoration: none;
+    position: relative;
+    
     display: block;
-    font-size: 21px;
-    line-height: 26px;
-    font-weight: bold;
-    background-color: #766357;
-    color: #ffffff;
     padding-top: 34px;
     padding-bottom: 26px;
+    
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 26px;
     text-align: center;
+    text-decoration: none;
+    
+    color: #ffffff;
+    background-color: #766357;  
 }
 
-
-
 .search-filters {
-    background-color: #ffffff;
+    position: absolute;
+    z-index: 10;
+    
+    display: none;
+    
     padding-top: 56px;
-    line-height: 26px;
-    font-weight: bold;
     padding-bottom: 55px;
     padding-left: 57px;
     padding-right: 54px;
-    display: none;
+    
+    font-weight: bold;
+    line-height: 26px; 
+    
+    background-color: #ffffff;
+     
+    
+    box-shadow: 0 10px 40px 5px rgba(0, 0, 0, 0.2); 
+}
+
+@keyframes shake {
+    0%, 100% {transform: translateX(0); }
+    10%, 30%, 50%, 70%, 90%  {transform: translateX(-10px); }
+    20%, 40%, 60%, 80% {transform: translateX(10px); }
+}
+
+@keyframes bounce {
+    0% {transform: translateY(0); }
+    50% {transform: translateY(70px); }
+    80% {transform: translateY(-50px); }
+    100% {transform: translateY(0); }
+}
+
+.search-filters-show {
+    display: block;
+    animation-name: bounce;
+    animation-duration: 0.7s;
+}
+
+.modal-error {
+    animation-name: shake;
+    animation-duration: 0.6s;
 }
 
 .field-data {
@@ -329,23 +335,27 @@ body {
 }
 
 .field-value-data {
+    position: relative;
+    
     margin-left: 114px;
     margin-right: 39px;
-    position: relative;
 }
 
 .field-data label {
     float: left;
+    
     line-height: 38px;
 }
 .field-data input {
     width: 100%;
-    border: none;
     height: 40px;
-    background-color: #f2f2f2;
-    text-transform: uppercase;
-    padding-left: 15px;
     box-sizing: border-box;
+    padding-left: 15px;
+    
+    text-transform: uppercase;
+    
+    background-color: #f2f2f2;
+    border: none;   
 }
 
 .field-data input:hover {
@@ -359,18 +369,21 @@ body {
 
 .btn-calendar {
     float: right;
-    margin-right: -38px;
-    padding: 0;
-    border: none;
     width: 38px;
     height: 40px;
-    background-color: #f2f2f2;
-    outline: none;
-    color: #c2c2c2;
-    text-transform: uppercase;
+    margin-right: -38px;
+    padding: 0;
+    
     font-size: 21px;
     line-height: 26px;
+    text-transform: uppercase;
     vertical-align: top;
+    
+    border: none;
+    color: #c2c2c2;
+    background-color: #f2f2f2;
+    border: none;
+    outline: none; 
 }
 
 .btn-calendar:hover {
@@ -382,15 +395,18 @@ body {
 }
 
 .btn-people-number {
-    padding: 0;
-    margin: 0;
-    border: none;
     width: 38px;
     height: 40px;
-    background-color: #f2f2f2;
-    outline: none;
-    color: #a9a9a9;
+    padding: 0;
+    margin: 0;
+    
     vertical-align: middle;
+    
+    border: none;
+    color: #a9a9a9;
+    background-color: #f2f2f2;
+    border: none;
+    outline: none;
 }
 
 .btn-people-number:hover {
@@ -403,15 +419,17 @@ body {
 
 .people-number input,
 .children-number input {
-    margin: 0;
-    border: none;
     width: 38px;
     height: 40px;
-    background-color: #f2f2f2;
-    outline: none;
+    margin: 0;
     padding: 0;
+    
     text-align: center;
     vertical-align: middle;
+    
+    background-color: #f2f2f2;
+    border: none;
+    outline: none;
 }
 
 input::-webkit-inner-spin-button,
@@ -425,14 +443,15 @@ input::-webkit-outer-spin-button {
 
 .field-people > label {
     float: left;
+    
     line-height: 38px;
 }
 
 .field-value-people {
-    margin-left: 114px;
-    text-align: left;
     height: 40px;
+    margin-left: 114px;
     
+    text-align: left; 
 }
 
 .btn-plus {
@@ -456,17 +475,18 @@ input::-webkit-outer-spin-button {
     margin-left: 25px;
 }
 
-
 .search-btn {
     width: 458px;
-    padding: 0;
-    border: none;
-    outline: none;
     height: 58px;
+    padding: 0;
+    
+    font-size: 21px;
     text-transform: uppercase;
+    
     color: #ffffff;
     background-color: #81b3d2;
-    font-size: 21px;
+    border: none;
+    outline: none;
 }
 
 .search-btn:hover {
@@ -474,18 +494,16 @@ input::-webkit-outer-spin-button {
 }
 
 .search-btn:active {
-    background-color: #5496bd;
     color: #88b6d1;
+    background-color: #5496bd;
 }
-
-
-
 
 .main-footer {
     height: 95px;
     width: 100%;
     padding-top: 25px;
-    background-color: rgba(255,255,255,0.9);
+    
+    background-color: rgba(255, 255, 255, 0.9);
 }
 
 .main-index-footer {
@@ -498,9 +516,10 @@ input::-webkit-outer-spin-button {
 .footer-item{
     display: inline-block;
     width: 300px;
-    text-align: center;
     margin-left: 50px;
     margin-right: 45px;
+    
+    text-align: center;
     vertical-align: middle;
 }
 
@@ -509,12 +528,14 @@ input::-webkit-outer-spin-button {
     width: 46px;
     height: 48px;
     margin: 0;
-    background-color: #81b3d2;
+    
     font-size: 0;
+    text-align: center;
     vertical-align: top;
     text-decoration: none;
+    
     color: #ffffff;
-    text-align: center;
+    background-color: #81b3d2;
 }
 
 .social-btn span {
@@ -527,8 +548,8 @@ input::-webkit-outer-spin-button {
 }
 
 .social-btn:active {
-    background-color: #5496bd;
     color: #88b6d1;
+    background-color: #5496bd;
 }
 
 .footer-hashtag p{
@@ -537,17 +558,18 @@ input::-webkit-outer-spin-button {
     font-weight: bold;
 }
 
-
 .footer-copyright span {
     line-height: 39px;
 }
 
 .copyright-logo {
     display: inline-block;
-    vertical-align: top;
     width: 113px;
     height: 39px;
+    
     font-size: 0;
+    vertical-align: top;
+    
     background-image: url("../img/srpite-copyright-logo.png");
     background-repeat: no-repeat;
     background-position: -10px -10px;
@@ -565,49 +587,13 @@ input::-webkit-outer-spin-button {
     background-position: -10px -128px;
 }
 
-
-
-
- 
-
-
-.sprite {
-    background-image: url("../img/srpite-copyright-logo.png");
-    background-repeat: no-repeat;
-    display: block;
-}
-
-.sprite-copyright-logo-1 {
-    width: 113px;
-    height: 39px;
-    background-position: -10px -10px;
-}
-
-.sprite-copyright-logo-2 {
-    width: 113px;
-    height: 39px;
-    background-position: -10px -69px;
-}
-
-.sprite-copyright-logo-3 {
-    width: 113px;
-    height: 39px;
-    background-position: -10px -128px;
-}
-
-
-
-
-
-
-
 .content-selection {
     padding-left: 73px;
     padding-right: 73px;
     padding-bottom: 11px;
     padding-top: 26px;
-    background-image: url("../img/hotels-filter-background.png") ;
     
+    background-image: url("../img/hotels-filter-background.png") ;
 }
 
 content-selection li {
@@ -625,22 +611,23 @@ content-selection li {
     width: 230px; 
 }
 
-
-
 .filters-title {
     font-size: 16px;
     line-height: 21px;
     font-weight: 600;
+    
     color: #ffffff;
 }
 
 .filter-range {
     float: right;
     width: 330px;
+    margin: 0 auto;
+    
     font-size: 14px;
     font-weight: 400;
+    
     color: #ffffff;
-    margin: 0 auto;
 }
 
 .filters-range-title {
@@ -656,11 +643,14 @@ input[type="checkbox"] {
 }
 
 input[type="checkbox"]+label {
+    position: relative;
+    
     display: block;
     margin: 10px 0;
-    line-height: 20px;
     padding-left: 45px;
-    position: relative;
+    
+    line-height: 20px;
+    
     cursor: pointer;    
 }
 
@@ -680,10 +670,6 @@ input[type="checkbox"]+label::before {
 input[type="checkbox"]:checked+label::before {
     content: "\2611";
 }
-
-
-
-
 
 .price-controls {
     position: relative;
@@ -748,7 +734,7 @@ input[type="checkbox"]:checked+label::before {
 .range-controls .scale {
     height: 2px;
     
-    background-color: rgba(255,255,255,0.3);
+    background-color: rgba(255, 255, 255, 0.3);
 }
 
 .range-controls .bar {
@@ -768,7 +754,7 @@ input[type="checkbox"]:checked+label::before {
     background-color: #ababab;
     border: 8px solid #ffffff;
     border-radius: 50%;
-    box-shadow: 0 2px 1px 0 rgba(0,1,1,0.2);
+    box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
     cursor: pointer;
 }
 
@@ -784,14 +770,13 @@ input[type="checkbox"]:checked+label::before {
     left: 80%;
 }
 
-
 .list-filters {
-    list-style: none;
-    color: #ffffff;
+    margin: 0;
     padding: 0;
-    margin: 0;
     padding-top: 11px;
-    margin: 0;
+    
+    color: #ffffff;
+    list-style: none;
 }
 
 .list-filters li {
@@ -809,9 +794,9 @@ input[type="checkbox"]:checked+label::before {
     
     font-size: 14px;
     line-height: 20px;
-    color: #ffffff;
     text-transform: uppercase;
     
+    color: #ffffff;
     background: transparent;
     border: 2px solid #ffffff;
     border-radius: 2px;
@@ -821,23 +806,17 @@ input[type="checkbox"]:checked+label::before {
 
 .btn-transparent:hover {
     color: #000000;
-    
     background-color: #ffffff;
 }
 
-
-
-
-
-
-
 .search-result {
+    margin-top: 28px;
     padding-left: 73px;
     padding-right: 73px;
     padding-bottom: 31px;
-    margin-top: 28px;
-    border-bottom: 1px solid #e5e5e5;
+    
     background-color: #ffffff;
+    border-bottom: 1px solid #e5e5e5;
 }
 
 .result-number {
@@ -850,18 +829,20 @@ input[type="checkbox"]:checked+label::before {
 
 .result-filters-name {
     float:left;
+    margin-top: 7px;
     margin-left: 48px;
     margin-right: 38px;
+    
     font-size: 12px;
     line-height: 18px;
-    margin-top: 7px;
 }
 
 .filters-sorting-list li {
     float: left;
-    list-style-type: none;
-    margin-right: 30px;
     margin-top: 6px;
+    margin-right: 30px;
+    
+    list-style-type: none;
 }
 
 .filters-sorting {
@@ -899,16 +880,16 @@ input[type="checkbox"]:checked+label::before {
     width: 23px;
     height: 23px;
     margin: 0px;
-    vertical-align: top;
-    text-align: center;
-    color: #cccccc;
     
+    text-align: center;
+    vertical-align: top;
+    
+    color: #cccccc;
 }
 
 .pointer-arrow span {
     font-size: 23px;
     line-height: 23px;
-
 }
 
 .pointers .active {
@@ -923,19 +904,14 @@ input[type="checkbox"]:checked+label::before {
     color: #81b3d2;
 }
 
-
-
-
-
-
 .housing-info {
+    height: 90px;
     padding-top: 30px;
     padding-bottom: 30px;
     padding-left: 73px;
     padding-right: 73px;
-    height: 90px;
-    border-bottom: 1px solid #e5e5e5;
 
+    border-bottom: 1px solid #e5e5e5;
 }
 
 .housing-image {
@@ -958,34 +934,38 @@ input[type="checkbox"]:checked+label::before {
 
 .rating {
     float: right;
-    text-align: right;
     
+    text-align: right; 
 }
 
 .rating-stars {
     display: inline-block;
     height: 25px;
-    background-color: #ffffff;
+    margin: 0;
+    
+    text-align: center;
     vertical-align: top;
     text-decoration: none;
+    
     color: #81b3d2;
-    text-align: center;
-    margin: 0;
+    background-color: #ffffff;
 }
 
 .rating-stars span {
-    font-size: 19px;
-    line-height: 21px;
     float: right;
     
+    font-size: 19px;
+    line-height: 21px;  
 }
 
 .housing-name {
+    margin-top: -5px;
+    margin-bottom: 7px;
+    
     font-size: 21px;
     line-height: 26px;
     font-weight: bold;
-    margin-top: -5px;
-    margin-bottom: 7px;
+    
     color: #000000;
     cursor: pointer;
 }
@@ -999,50 +979,53 @@ input[type="checkbox"]:checked+label::before {
 }
 
 .btn-detail {
-    text-decoration: none;
-    background-color: #81b3d2;
-    color: #ffffff;
-    padding-left: 16px;
-    padding-right: 16px;
-    margin-right: 8px;
     float: left;
     height: 26px;
-    font-weight: bold;
+    margin-right: 8px;
+    padding-left: 16px;
+    padding-right: 16px;
+    
     line-height: 26px;
+    font-weight: bold;
+    text-decoration: none;
+    
+    color: #ffffff;
+    background-color: #81b3d2;
 }
 
 .btn-detail:hover {
-    background-color: #669ec0;
     color: #ffffff;
+    background-color: #669ec0;
 }
 
 .btn-detail:active {
-    background-color: #5496bd;
     color: #88b6d1;
+    background-color: #5496bd;
 }
 
 .btn-book {
-    text-decoration: none;
-    background-color: #766357;
-    color: #ffffff;
-    padding-left: 20px;
-    padding-right: 15px;
     float: left;
     height: 26px;
+    padding-left: 20px;
+    padding-right: 15px;
+    
     font-weight: bold;
     line-height: 26px;
+    text-decoration: none;
+    
+    color: #ffffff;
+    background-color: #766357;
 }
 
 .btn-book:hover {
-    background-color: #604e43;
     color: #ffffff;
+    background-color: #604e43;
 }
 
 .btn-book:active {
-    background-color: #503e33;
     color: #857871;
+    background-color: #503e33;
 }
-
 
 
 .main-housing-info  {
@@ -1050,13 +1033,15 @@ input[type="checkbox"]:checked+label::before {
 }
 
 .grade {
-    background-color: #f2f2f2;
-    color: #666666;
     height: 26px;
-    line-height: 26px;;
+    margin-top: 39px;
     padding-left: 15px;
     padding-right: 15px;
-    margin-top: 39px;
+    
+    line-height: 26px;
+    
+    color: #666666;
+    background-color: #f2f2f2;
 }
 
 
