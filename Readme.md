@@ -1,6 +1,6 @@
 # Личный проект «Седона»
 
-Ссылка на Git Hub Pages:  http://leragreen.github.io/197604-sedona/
+Ссылка на GitHub Pages:  http://leragreen.github.io/197604-sedona/
 
 <br>
 <br>
