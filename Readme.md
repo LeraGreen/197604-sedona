@@ -1,5 +1,9 @@
 # Личный проект «Седона»
 
+Ссылка на Git Hub Pages:  http://leragreen.github.io/197604-sedona/
+
+
+
 * Студент: [Валерия Зелёная](https://up.htmlacademy.ru/htmlcss/13/user/197604).
 * Наставник: [Иван Смирнов](https://htmlacademy.ru/profile/id71777).
 
